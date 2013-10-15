@@ -49,6 +49,7 @@
                            'url',
                            'money',
                            'page',
+                           'section'
                            );
 
             return in_array($field->Type,$types) ? $field->Type : 'unsupportedFieldType';
@@ -178,6 +179,10 @@
         public function page($field,&$normal_post)
         {
         }
+		
+	public function section($field,&$normal_post)
+        {
+	}
     }
 
     class UnsupportedFieldTypeException extends Exception{}
